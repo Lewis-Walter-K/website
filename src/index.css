@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "IntroRust";
+    src: local("IntroRust"),
+      url("./fonts/IntroRust.otf") format("opentype");
+    font-weight: normal;
+  }

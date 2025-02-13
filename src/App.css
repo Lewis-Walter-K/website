@@ -1,12 +1,11 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Intro+Rust&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Intro+Rust');
 @font-face {
-    font-family: 'Intro Rust';
-    src: url('/assets/fonts/IntroRust-Base.ttf') format('truetype'),
-         url('/assets/fonts/IntroRust-Base.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "IntroRust";
+  src: local("IntroRust"),
+    url("./fonts/IntroRust.otf") format("opentype");
+  font-weight: normal;
+}
 
 body {
     display: grid;
@@ -21,18 +20,19 @@ body {
   
 /* Main container */
 .main-container {
-@apply sm:max-w-xs md:max-w-lg lg:max-w-7xl mx-auto flex flex-col md:flex-col lg:flex-row gap-12;
+@apply sm:max-w-xs md:max-w-lg lg:max-w-7xl mx-auto flex flex-col md:flex-col lg:flex-row gap-8;
 }
 
 /* Left section */
 .left-section {
-    @apply lg:w-2/5;
+    @apply lg:w-1/2;
     font-family: Montserrat;
 }
 
 /* Teal divider */
 .teal-divider {
-@apply w-11/12 h-5 bg-teal-800 mb-8 mx-auto;
+@apply w-11/12 lg:w-full h-5 lg:h-7 lg:mt-8 mb-8 lg:mb-20 mx-auto;
+background-color: #145f48;
 }
 
 /* Paragraph text */
@@ -56,20 +56,23 @@ letter-spacing: 0em;
 /* Heading */
 .heading {
 @apply text-yellow-500 text-5xl lg:text-7xl font-bold leading-tight px-5;
-font-family: 'Intro Rust';
+font-family: IntroRust;
 }
 
 /* Event year text */
 .event-year {
-@apply text-black font-bold lg:text-7xl text-5xl;
+@apply text-black font-bold lg:text-7xl text-4xl;
 }
 
 /* Description text */
 .description {
-@apply font-bold text-3xl;
+@apply font-bold text-2xl lg:text-3xl;
 }
 /* Spacing adjustments */
 .text-container {
-@apply mt-6 mr-2 text-xl lg:text-3xl text-left lg:px-24;
+@apply lg:mt-6 mr-2 text-lg lg:text-3xl text-left lg:px-20;
 font-family:Montserrat;
+}
+.right-section-content-Khang{
+  @apply flex flex-col items-start text-right mt-4 space-y-3 float-right;
 }

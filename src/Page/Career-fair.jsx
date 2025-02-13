@@ -25,12 +25,12 @@ function Info() {
             INFORMATION ABOUT THE EVENT
           </h2>
           <div className="text-container">
-            <p className="px-8 mt-4 px-2 lg:p-0">In <span className="event-year">2025</span></p>
-            <p className="px-8 mt-2 px-2 lg:p-0">a promising and impressing <span className="description">CFIE</span></p>
-          <div className="flex flex-col items-start text-right mt-6 space-y-4 float-right">
+            <p className="px-8 mt-4 lg:p-0 text-base lg:text-3xl">In <span className="event-year">2025</span></p>
+            <p className="px-8 mt-2 lg:p-0 text-lg lg:text-2xl">a promising and impressing <span className="description">CFIE</span></p>
+          <div className="right-section-content-Khang">
             <div className="flex gap-10 font-bold text-xs md:text-xl">
               <p className="min-w-[120px] text-teal-800">Participants</p>
-              <p className="font-bold">>1000 Students <br /> 25+ Industries</p>
+              <p className="font-bold">{'>'}1000 Students <br /> 25+ Industries</p>
             </div>
 
             <div className="flex gap-10 font-bold text-xs md:text-xl">
